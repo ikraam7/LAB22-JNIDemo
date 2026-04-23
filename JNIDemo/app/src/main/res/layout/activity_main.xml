@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo/Header -->
+        <TextView
+            android:id="@+id/txtJni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JNI"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:letterSpacing="0.4"
+            android:textAllCaps="true"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/txtDemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEMO"
+            android:textSize="44sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/text_main"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:id="@+id/sepView"
+            android:layout_width="60dp"
+            android:layout_height="4dp"
+            android:background="@color/accent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Card 1: System Status (VIOLET) -->
+        <LinearLayout
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="10dp"
+            android:alpha="0.95">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SYSTEM STATUS"
+                android:textColor="@color/accent"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvGreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waiting for JNI interface..."
+                android:textColor="@color/text_main"
+                android:textSize="18sp"
+                android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <!-- Card 2: Math (BLEU) -->
+        <LinearLayout
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="10dp"
+            android:alpha="0.95">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPUTATIONAL ENGINE"
+                android:textColor="@color/accent2"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvFacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="8dp"/>
+        </LinearLayout>
+
+        <!-- Card 3: String (ROSE) -->
+        <LinearLayout
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="10dp"
+            android:alpha="0.95">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRING MANIPULATION"
+                android:textColor="@color/accent3"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvFlip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="8dp"/>
+        </LinearLayout>
+
+        <!-- Card 4: Memory (VERT) -->
+        <LinearLayout
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="10dp"
+            android:alpha="0.95">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEMORY ANALYSIS"
+                android:textColor="@color/accent4"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="8dp"/>
+        </LinearLayout>
+
+        <!-- Card 5: Benchmark (Extension C) -->
+        <LinearLayout
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="10dp"
+            android:alpha="0.95">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERFORMANCE BENCHMARK"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvBenchmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:fontFamily="monospace"
+                android:lineSpacingExtra="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
